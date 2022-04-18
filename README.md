@@ -12,19 +12,16 @@ Follow the instructions [here](https://www.earthdatascience.org/workshops/setup-
 1. Sentinel-2
 
 ![Sentinel-2 Image of Niwot Ridge](/images/sentinel_2_niwot_ridge.png)
-
 [Credit](https://sentinel.esa.int/web/sentinel/missions/sentinel-2)
 
 2. Airplane platform
 
 ![NIWOT Level 3 Orthorectified Mosaic Dataset Red Band Reflectance (August 2020)](/images/niwot_red_refl_08_22.png)
-
 [Credit](https://data.neonscience.org/data-products/DP3.30006.001)
 
 3. UAV
 
 ![UAV Captured Wavelengths](/images/micasense_wavelength_image.png)
-
 [Credit](https://uavprime.com/wp-content/uploads/2021/04/RedEdge-MX-Dual-Camera-Whitepaper.pdf)
 
 ### Project Workflow
