@@ -9,21 +9,21 @@ The second purpose of this project is to determine whether the variance at each 
 Follow the instructions [here](https://www.earthdatascience.org/workshops/setup-earth-analytics-python/) to set up your python, git, and bash environment on your computer.
 
 ### Project Data
-1. Sentinel-2
+1. **Sentinel-2**
 
 [Credit](https://sentinel.esa.int/web/sentinel/missions/sentinel-2)
 
 ![Sentinel-2 Image of Niwot Ridge](/images/sentinel_2_niwot_ridge.png)
 
 
-2. Airplane platform
+2. **Airplane platform**
 
 [Credit](https://data.neonscience.org/data-products/DP3.30006.001)
 
 ![NIWOT Level 3 Orthorectified Mosaic Dataset Red Band Reflectance (August 2020)](/images/niwot_red_refl_08_22.png)
 
 
-3. Unmanned Aerial Vehicle (UAV)
+3. **Unmanned Aerial Vehicle (UAV)**
 
 [Credit](https://uavprime.com/wp-content/uploads/2021/04/RedEdge-MX-Dual-Camera-Whitepaper.pdf)
 
@@ -32,4 +32,4 @@ Follow the instructions [here](https://www.earthdatascience.org/workshops/setup-
 
 ### Project Workflow
 
-![Project Workflow Diagram](/images/workflow_diagram.png)
+![Project Workflow Diagram](/images/ea_capstone_22_workflow.png)
