@@ -1,4 +1,4 @@
-# ea_capstone_2022_macrosystems_variance
+# macrosystems_spectral_variance
 
 ### Project Description
 The purpose of this repository is to document the progress of my Earth Analytics capstone project as well as to safely store related data and items. The project goal is to calculate the variance of hyperspectral imagery between National Ecological Observatory Network (NEON) sites located throughout the western part of the United States. This will be used to support a larger project in which vegetation on the ground will be identified via remote sensing data depending on the wavelengths absorbed/reflected by the vegetation. Others may wish to use the workflow presented in this repository to perform a similar analysis for other NEON sites located outside of the western United States.
