@@ -1,0 +1,2 @@
+# Ignore ipynb_checkpoints if it exists
+.ipynb_checkpoints
