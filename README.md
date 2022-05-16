@@ -9,7 +9,7 @@ Using remote sensing to identify plants for the purposes above is actively being
 1. [Multispectral Approach for Identifying Invasive Plant Species Based on Flowering Phenology Characteristics](https://www.mdpi.com/2072-4292/11/8/953/htm)
 2. [No place to hide: Rare plant detection through remote sensing](https://onlinelibrary.wiley.com/doi/full/10.1111/ddi.13244) 
 
-While identifying plants using remote sensing is being researched, there are great [advantages to conducting this type of work at long-term ecological monitoring sites](https://www.sciencedirect.com/science/article/pii/S0048969717321095#:~:text=Long%2Dterm%20ecological%20research%20can,trends%20(M%C3%BCller%20et%20al.%2C) such as NEON. For example, due to available historical data, the impacts of extreme or rare events on plant communities could be determined, and both long-term and short-term trends can be monitored and explored over time. 
+While identifying plants using remote sensing is being researched, there are great [advantages to conducting this type of work at long-term ecological monitoring sites](https://doi.org/10.1016/j.scitotenv.2017.08.111) such as NEON. For example, due to available historical data, the impacts of extreme or rare events on plant communities could be determined, and both long-term and short-term trends can be monitored and explored over time. 
 
 ### Workflow
 Follow the instructions [here](https://www.earthdatascience.org/workshops/setup-earth-analytics-python/) to set up your python, git, and bash environment on your computer.
