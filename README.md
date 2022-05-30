@@ -39,9 +39,9 @@ These instructions were adapted from the instructions made available by EarthLab
 11. shapely (and geometry module and box function)
 
 #### Running the Workflow
-Begin by running the macrosystems_blog.ipynb file located in the notebooks_and_notebook_resources directory of this repository. This will get you up to speed on the current status of the project as well as prompt you to download an h5 file that will be used in the other notebooks contained within the repository.
+Begin by opening the python command prompt or terminal on your computer. Activate your environment by typing ```python conda activate macrosystems_spectral_variance``` and then ```jupyter notebook```. This will open jupyter notebook in a browser tab. From there, navigate to the the macrosystems_blog.ipynb file located in the notebooks_and_notebook_resources directory of this repository. Run the notebook by selecting Kernel from the menu bar and then Restart & Run All. Finally, select Restart and Run all Cells when prompted. Reading through the notebook will get you up to speed on the current status of the project as well as prompt you to download an h5 file that will be used in the other notebooks contained within the repository.
 
-After running the macrosystems_blog.ipynb file, run the no_code_html_macrosystems_blog.ipynb to convert the macrosystems_blog.ipynb file to an html file with code blocks removed. This may be useful for reporting purposes.
+After running the macrosystems_blog.ipynb file, run the no_code_html_macrosystems_blog.ipynb using the same methods outline above to convert the macrosystems_blog.ipynb file to an html file with code blocks removed. This may be useful for reporting purposes.
 
 ### Example Usage
 Data formats needed to apply this workflow are csv and h5 files. Both files csv file will be automatically downloaded when running the macrosystems_blog_ipynb file located in the notebooks_and_notebook_resources directory. The files will be downloaded to the earth-analytics/data/earthpy-downloads directory located on your computer. To find similar data that could be used in this workflow, refer to the api_exploration_data_url_retrieval.ipynb file located in the notebooks_and_notebook_resources directory. That notebook will take you through how to find other h5 files that are managed by NEON. 
