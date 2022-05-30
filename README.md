@@ -15,9 +15,9 @@ While identifying plants using remote sensing is being researched, there are gre
 Follow the instructions [here](https://www.earthdatascience.org/workshops/setup-earth-analytics-python/) to set up your git and bash environment on your computer. For installing your python environment that will be used for this workflow:
 1. Fork and clone [the repository to which this README.md file belongs](https://github.com/rami8797/macrosystems_spectral_variance), if you haven't already. This repository contains an environment.yml file that will be used to set up your python environment.
 2. If it’s not already open, open the Terminal on your computer (Git Bash for Windows or Terminal on a Mac/Linux).
-3. In the Terminal, set your directory to the cloned macrosystems_spectral_variance directory using cd to change directories (e.g. ```python cd macrosystems_spectral_variance```).
-4. Once you are in the macrosystems_spectral_variance directory, you can create your environment. To do this run: ```python conda env create -f environment.yml```.
-5. Once the environment is installed you can activate it using: ```python conda activate macrosystems_spectral_variance```.
+3. In the Terminal, set your directory to the cloned macrosystems_spectral_variance directory using cd to change directories (e.g. ```cd macrosystems_spectral_variance```).
+4. Once you are in the macrosystems_spectral_variance directory, you can create your environment. To do this run: ```conda env create -f environment.yml```.
+5. Once the environment is installed you can activate it using: ```conda activate macrosystems_spectral_variance```.
 
 These instructions were adapted from the instructions made available by EarthLab on [how to setup conda environments](https://www.earthdatascience.org/workshops/setup-earth-analytics-python/setup-python-conda-earth-analytics-environment/).
 
@@ -39,7 +39,7 @@ These instructions were adapted from the instructions made available by EarthLab
 11. shapely (and geometry module and box function)
 
 #### Running the Workflow
-Begin by opening the python command prompt or terminal on your computer. Activate your environment by typing ```python conda activate macrosystems_spectral_variance``` and then ```jupyter notebook```. This will open jupyter notebook in a browser tab. From there, navigate to the the macrosystems_blog.ipynb file located in the notebooks_and_notebook_resources directory of this repository. Run the notebook by selecting Kernel from the menu bar and then Restart & Run All. Finally, select Restart and Run all Cells when prompted. Reading through the notebook will get you up to speed on the current status of the project as well as prompt you to download an h5 file that will be used in the other notebooks contained within the repository.
+Begin by opening the python command prompt or terminal on your computer. Activate your environment by typing ```conda activate macrosystems_spectral_variance``` and then ```jupyter notebook```. This will open jupyter notebook in a browser tab. From there, navigate to the the macrosystems_blog.ipynb file located in the notebooks_and_notebook_resources directory of this repository. Run the notebook by selecting Kernel from the menu bar and then Restart & Run All. Finally, select Restart and Run all Cells when prompted. Reading through the notebook will get you up to speed on the current status of the project as well as prompt you to download an h5 file that will be used in the other notebooks contained within the repository.
 
 After running the macrosystems_blog.ipynb file, run the no_code_html_macrosystems_blog.ipynb using the same methods outline above to convert the macrosystems_blog.ipynb file to an html file with code blocks removed. This may be useful for reporting purposes.
 
