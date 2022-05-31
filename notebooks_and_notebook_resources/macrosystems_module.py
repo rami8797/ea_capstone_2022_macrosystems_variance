@@ -6,7 +6,7 @@ import h5py
 
 # Create function that will do everything above and spit out a list of site ids
 def get_site_ids(data_path, bounds, column1, column_info1, column2, column_info2):
-    """Open a csv file, turn it into a geopandas dataframe, and filter 
+    """Open NEON metadata file, turn it into a geopandas dataframe, and filter 
     the dataframe to only contain sites within a provided location.
 
     Parameters
@@ -34,8 +34,13 @@ def get_site_ids(data_path, bounds, column1, column_info1, column2, column_info2
 
     """
 
-    # Open csv file
-    metadata_df = pd.read_csv(data_path)
+    if os.path.basename(os.path.normpath(metadata_path)) == "NEON_Field_Site_Metadata_20220224.csv":
+
+        # Open csv file
+        metadata_df = pd.read_csv(data_path)
+        
+    else:
+        print("Set your directory path to NEON_Field_Site_Metadata_20220224.csv before continuing.")
 
     # Convert pandas dataframe to a geopandas dataframe
     metadata_gpd = gpd.GeoDataFrame(metadata_df,
@@ -53,13 +58,23 @@ def get_site_ids(data_path, bounds, column1, column_info1, column2, column_info2
     spatially_filtered_sites = metadata_assigned_crs.cx[filter_box.bounds[0]:filter_box.bounds[2], 
                                        filter_box.bounds[1]:filter_box.bounds[3]]
 
-    # Filter by column1
-    column1_gdf = spatially_filtered_sites[(
-    spatially_filtered_sites[column1].str.contains(column_info1))]
+    if column1 in spatially_filtered_sites:
     
-    # Filter by column2
-    column2_gdf = column1_gdf[(
-    column1_gdf[column2].str.contains(column_info2))]
+        # Filter by column1
+        column1_gdf = spatially_filtered_sites[(
+        spatially_filtered_sites[column1].str.contains(column_info1))]
+    
+    else:
+        print("Oops, looks like the column you selected isn't in the dataframe.")
+    
+    if column2 in spatially_filtered_sites:
+    
+        # Filter by column2
+        column2_gdf = column1_gdf[(
+        column1_gdf[column2].str.contains(column_info2))]
+    
+    else:
+        print("Oops, looks like the column you selected isn't in the dataframe.")
     
     # Create a list of site ids (could be used in a loop for later processing)
     site_ids = column2_gdf["field_site_id"].tolist()
@@ -121,12 +136,15 @@ def clean_h5_refl_df(file_path):
     # Apply scale factor
     refl_array = refl_clean/scale_factor
     
-    # Loop through reflectance array again to grab whole arrays
-    # Create empty list
-    full_refl_array = []
-    for band in np.arange(refl_array.shape[2]):
-        refl_band = refl_array[:,:,band]
-        full_refl_array.append(refl_band)
+    try:
+        # Loop through reflectance array again to grab whole arrays
+        # Create empty list
+        full_refl_array = []
+        for band in np.arange(refl_array.shape[2]):
+            refl_band = refl_array[:,:,band]
+            full_refl_array.append(refl_band)
+    except DimensionError:
+        print("Oops, looks like the array within the file you're trying to use isn't of the correct dimensions.")
         
     # Make dataframe with wavelength, full reflectance array, and site column
     refl_array_df = pd.DataFrame()
