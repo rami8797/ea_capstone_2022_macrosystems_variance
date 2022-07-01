@@ -1,4 +1,4 @@
-name: earth-analytics-python
+name: macrosystems-variance
 channels:
   - conda-forge
   - defaults
